@@ -39,7 +39,7 @@ while True:
         pr_ETH = round(((max_price / min_price) * 100 - 100), 3)
         pr_BTC = round(((max_price_BTC / min_price_BTC) * 100 - 100), 3)
         actual_change = pr_ETH - pr_BTC
-        if actual_change >= 0.001:
+        if actual_change >= 1:
             if price == min_price:
                 print(f'Понизился курс ETHUSDT на - {actual_change}%')
                 print(f'Цена в данный момент = {price}')
